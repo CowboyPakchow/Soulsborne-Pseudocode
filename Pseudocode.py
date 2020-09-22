@@ -5,7 +5,7 @@
 # each floor contains boss room and safe room
 # players can roam around fighting monsters and try to find those rooms
 # safe rooms provide a merchant and safe area to rest at
-# boss rooms contain a boss that must be defeated to continue on to the next floor
+# boss rooms contain boss that must be defeated to progress to proceeding floor
 
 
 # Pseudocode player character:
@@ -13,7 +13,7 @@
 # hp values remain at 30
 # if player gets hit, remove hp values (hp value varies per enemy)
 # if player dies, game ends
-# if player attacks, generate random number generator for attack, miss or critical hti
+# if player attacks, generate random number for attack, miss or critical hit
 
 
 # Pseudocode monster (applies to special monster):
@@ -21,7 +21,7 @@
 # hp values remain at full (hp value varies per monster)
 # if monster gets hit, remove hp values based on player character's attack
 # if monster dies, drop loot and exp
-# if monster attacks, generate random number generator for attack, miss or critical hit
+# if monster attacks, generate random number for attack, miss or critical hit
 
 
 # Pseudocode floor boss:
@@ -30,7 +30,7 @@
 # if boss gets hit, remove hp values based on character's attack
 # if boss dies, grant access to proceeding floor
 # if final boss dies, game ends
-# if boss attacks, generate random number generator for attack, miss or critical hit
+# if boss attacks, generate random number for attack, miss or critical hit
 
 
 # Pseudocode inventory:
@@ -44,8 +44,8 @@
 # generate floor layout
 # provide a map of the floor in safe room
 # safe room will always be close to player character spawn
-# randomly generate a chance for monster to spawn when player character enters room
-# generate random monster (based on %) encounter 
+# randomly generate monster spawn when player enters room
+# generate random monster (based on %) encounter
 # one room on the floor  will 100% always have a special monster
 
 
@@ -58,13 +58,13 @@
 
 
 # Pseudocode weapons:
-# depending on weapon, it will have a base damage value
+# players have base attack of 1, weapons raise base attack of player character
 # weapons can be sold
 # weapons cannot be consumed
-# if enemy is hit by a weapon with a damage value of 3, enemy hp value decreases by 3
+# if enemy is hit by a weapon with a damage value of 3, enemy hp decreases by 3
 
 
-# Pseudocode armor: 
+# Pseudocode armor:
 # armor raises base hp value of player character
 # does not regen hp values
 # armor can be sold
